@@ -12,10 +12,10 @@ function Card({
   if (text) {
     return (
       <Flex.Container
-        width={{ xs: '400px', md: '876px' }}
-        height={{ xs: '400px', md: '390px' }}
+        width={{ xs: '360px', md: '876px' }}
+        height={{ xs: '380px', md: '390px' }}
         border={`1px solid ${theme.colors.primary.background}`}
-        margin="0 9px 30px 9px"
+        margin={{ xs: '0 0 30px 0', md: '0 9px 30px 9px' }}
         direction="column"
         wrap="wrap"
       >
@@ -25,7 +25,7 @@ function Card({
         >
           <CardImage imagePath={imagePath} />
         </Flex.Child>
-        <Flex.Child padding="0 16px" height={{ xs: '68px', md: '108px' }} width={{ xs: '290px', md: '298px' }}>
+        <Flex.Child padding="0 16px" height={{ xs: '48px', md: '108px' }} width={{ xs: '360px', md: '298px' }}>
           <CardTitle textAlign={{ xs: 'center', md: 'start' }}>{title}</CardTitle>
         </Flex.Child>
         <Flex.Child padding="0 16px" display={{ xs: 'none', md: 'block' }} width={{ xs: '290px', md: '298px' }}>
